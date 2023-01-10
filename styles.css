@@ -1,0 +1,7 @@
+.ecosystem .cmp-cards {
+    margin-bottom: 2rem;
+}
+.ecosystem .cmp-cards figure .elm-image {
+    width: 64px;
+    height: 64px;
+}
