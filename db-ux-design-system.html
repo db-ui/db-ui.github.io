@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Overview regarding the technical components out of the DB UX Design System by Deutsche Bahn.">
+    <title>DB UI</title>
+    <link
+      rel="stylesheet"
+      href="https://db-ui.github.io/core/css/enterprise/db-ui-core.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://db-ui.github.io/core/css/pattern-scaffolding-project-specific.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="alternate" href="index.html" hreflang="en" />
+  </head>
+  <body class="tpl-intro">
+    <header class="rea-header" role="banner">
+      <div class="cmp-brand">
+        <a href="#" title="Home" rel="home">
+          <img
+            src="images/db_logo.svg"
+            alt="back to the homepage"
+            width="100"
+            height="70"
+            class="elm-image is-logo"
+            elementtiming="logo"
+          />
+        </a>
+      </div>
+    </header>
+    <main id="en">
+      <section>
+        <h1>DB UX Design System</h1>
+        <p>
+          Willkommen beim Design System der Deutschen Bahn für digitale Produkte und Services. Mit den Komponenten in Code und Design, einer zentralen Sketch-Library, Code Components und umfassenden Guidelines helfen wir dir, Produkte und Services schneller, effizienter und konsistenter zu gestalten. Dabei basiert das System als "One Single Source of Truth" natürlich auf der Design Language der Marke und stellt so ein markenkonsistentes Design sicher.
+        </p>
+        <p>Wir stellen Ihnen demnächst mit der Beta-Version öffentlich weitere Informationen zur Verfügung.</p>
+      </section>
+      <section class="ecosystem">
+        <h2 class="elm-headline">Produktlandschaft</h2>
+
+        <ul>
+          <li><a href="https://www.npmjs.com/package/@db-ui/foundations"><code>@db-ui/foundations</code></a></li>
+          <li><a href="https://www.npmjs.com/package/@db-ui/components"><code>@db-ui/components</code></a></li>
+          <li><a href="https://www.npmjs.com/package/@db-ui/ngx-components">Angular Components</a></li>
+          <li><a href="https://www.npmjs.com/package/@db-ui/react-components">React Components</a></li>
+          <li><a href="https://www.npmjs.com/package/@db-ui/v-components">Vue Components</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <!-- [html-validate-disable-next heading-level -- we're doing some simple demonstration simplification here] -->
+        <h2 class="elm-headline">Kern Prinzipien</h2>
+
+        <ul class="cmp-cards">
+          <!-- [html-validate-disable-next element-permitted-content, element-permitted-parent -- we're only providing a partial here] -->
+          <li class="cmp-card" data-variant="banner">
+            <figure>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                aria-hidden="true"
+              >
+                <use
+                  href="icons/illustrative/devices/db_ic_il_laptop.svg#icon"
+                ></use>
+              </svg>
+              <figcaption>
+                <!-- [html-validate-disable-next heading-level] -->
+                <h3 class="elm-headline">Konsistent &amp; Konform</h3>
+                <p>
+                  DB UI Core basiert auf dem
+                  <a
+                    href="https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/UI-Komponenten"
+                    target="_blank"
+                    >DB UX Design System</a
+                  >, den Richtlinien für alle Kunden- und Enterprise Websites und Web Anwendungen des DB Personenverkehrs.
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <!-- [html-validate-disable-next element-permitted-content, element-permitted-parent -- we're only providing a partial here] -->
+          <li class="cmp-card" data-variant="banner">
+            <figure>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                aria-hidden="true"
+              >
+                <use
+                  href="icons/illustrative/action/db_ic_il_handshake.svg#icon"
+                ></use>
+              </svg>
+              <figcaption>
+                <!-- [html-validate-disable-next heading-level] -->
+                <h3 class="elm-headline">Barrierefrei</h3>
+                <p>
+                  DB UI Core setzt auf sematisches HTML, ARIA Rollen, Zustände und
+                  Eigenschaften um die Gestaltung anzubinden, und erzwingt damit korrektes,
+                  zugängliches Markup. Zudem lassen wir unsere Arbeiten durch das 
+                  <a
+                    href="https://db.de/8pei5n"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Team Digital Accessibility</a
+                  > testen.
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <!-- [html-validate-disable-next element-permitted-content, element-permitted-parent -- we're only providing a partial here] -->
+          <li class="cmp-card" data-variant="banner">
+            <figure>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                aria-hidden="true"
+              >
+                <use
+                  href="icons/illustrative/news/db_ic_il_newspaper.svg#icon"
+                ></use>
+              </svg>
+              <figcaption>
+                <!-- [html-validate-disable-next heading-level] -->
+                <h3 class="elm-headline">Deklarativ</h3>
+                <p>
+                  Wir verwenden beschreibende HTML Klassen-Benamungen
+                  anstelle von visuellen Helfern, sodass unsere Auszeichnungen
+                  und die Struktur schlank, performant, einfach zu aktualisieren,
+                  als auch für Menschen klar verständlich sind.
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <!-- [html-validate-disable-next element-permitted-content, element-permitted-parent -- we're only providing a partial here] -->
+          <li class="cmp-card" data-variant="banner">
+            <figure>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                aria-hidden="true"
+              >
+                <use
+                  href="icons/illustrative/communication/db_ic_il_broken.svg#icon"
+                ></use>
+              </svg>
+              <figcaption>
+                <!-- [html-validate-disable-next heading-level] -->
+                <h3 class="elm-headline">Unabhängig</h3>
+                <p>
+                  Unser Code ist entkoppelt von der JavaScript Schicht, sodass
+                  unsere Komponenten in jedem Web Technologie-Kontext
+                  implementiert werden können; zudem stellen wir universelle Web Components
+                  als auch "native" JS Framework Komponenten mit
+                  <a href="https://db-ui.github.io/elements/" target="_blank"
+                    >DB UI Elements</a
+                  >
+                  bereit.
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <!-- [html-validate-disable-next element-permitted-content, element-permitted-parent -- we're only providing a partial here] -->
+          <li class="cmp-card" data-variant="banner">
+            <figure>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                aria-hidden="true"
+              >
+                <use
+                  href="icons/illustrative/feature/db_ic_il_green.svg#icon"
+                ></use>
+              </svg>
+              <figcaption>
+                <!-- [html-validate-disable-next heading-level] -->
+                <h3 class="elm-headline">Aktuell</h3>
+                <p>
+                  Mit der Weiterentwicklung des
+                  <a
+                    href="https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/UI-Komponenten"
+                    target="_blank"
+                    >DB UX Design Systems</a
+                  >
+                  stellen wir auch stets Code Aktualisierungen bereit,
+                  sodass unsere Entwickelnden lediglich die Pakete aktualisieren
+                  müssen, um den visuellen und funktionalen Neuerungen zu erhalten.
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <!-- [html-validate-disable-next element-permitted-content, element-permitted-parent -- we're only providing a partial here] -->
+          <li class="cmp-card" data-variant="banner">
+            <figure>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                aria-hidden="true"
+              >
+                <use
+                  href="icons/illustrative/action/db_ic_il_tips.svg#icon"
+                ></use>
+              </svg>
+              <figcaption>
+                <!-- [html-validate-disable-next heading-level] -->
+                <h3 class="elm-headline">Gemeinschaftlich</h3>
+                <p>
+                  DB UI versteht sich als technologische Platform für eine zentrale Basis
+                  kuratierter Komponenten; deren Entwicklung ist stark unterstützt
+                  von der Community, und adaptiert aus den Arbeiten in
+                  den Projekten sowie zahlreichen Rückmeldungen.
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <!-- [html-validate-disable-next heading-level -- we're doing some simple demonstration simplification here] -->
+        <h2 class="elm-headline">Nutzung</h2>
+        <p>
+          Zunächst muss DB UI Core als Abhängigkeit im Projekt installiert werden und
+          und dann im HTML das CSS referenziert werden.<br>
+          Hierzu haben wir im 
+          <a
+            href="https://github.com/db-ui/core/tree/main/docs/getStarted.adoc"
+            target="_blank"
+            rel="noopener noreferrer"
+            hreflang="en">Get Started(docs)</a
+          > detailierte Informationen bereitgestellt.<br>
+          Im Falle der Entwicklung einer JavaScript Anwendung sollte insbesondere auch
+          <a href="https://db-ui.github.io/elements/" target="_blank"
+            >DB UI Elements</a
+          > in Betracht gezogen werden, das auf DB UI Core basiert und mit dem wir den
+          Web Standard der Web Components bereitstellen für ein einfaches Einbinden
+          in diese Technologien.
+        </p>
+
+        <!-- [html-validate-disable-next heading-level -- we're doing some simple demonstration simplification here] -->
+        <h2 class="elm-headline">Weitere Informationen</h2>
+        <p>
+          Zusätzlich stellen wir stetig weitere Informationen zu unserem Ökosystem bereit:
+        </p>
+        <ul class="cmp-link-list">
+          <li>
+            <a
+              href="https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/UI-Komponenten"
+              class="elm-link"
+              title=""
+              rel="noopener noreferrer"
+              target="_blank"
+              >DB UX Design System Dokumentation im DB Marketingportal
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://db.de/pu8moh"
+              class="elm-link"
+              title=""
+              rel="noopener noreferrer"
+              target="_blank"
+              >Confluence Wiki – "Technische Umsetzung des Enterprise UI
+              Design Systems" (nur intern verfügbar)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://db.de/1tyr73"
+              class="elm-link"
+              title=""
+              rel="noopener noreferrer"
+              target="_blank"
+              >Confluence – Web UI Komponenten Bibliothek Library (nur intern verfügbar)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/db-ui/core/blob/main/CHANGELOG.md"
+              class="elm-link"
+              title=""
+              rel="noopener noreferrer"
+              target="_blank"
+              >Änderungshistorie / Changelog
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/db-ui/core/tree/main/docs/adr"
+              class="elm-link"
+              title=""
+              rel="noopener noreferrer"
+              target="_blank"
+              >Architekturentscheidungen bzw. <abbr title="Architectural Decision Records">ADRs</abbr>
+            </a>
+          </li>
+        </ul>
+        <!-- [html-validate-disable-next heading-level -- we're doing some simple demonstration simplification here] -->
+        <h2 class="elm-headline">Gebt uns Euer Feedback!</h2>
+        <p>
+          Durch Eure Rückmeldungen können wir uns stets weiterentwickeln – Ihr könnt uns entweder kontaktieren im
+          <a
+            href="https://db.de/krnm74"
+            class="elm-link"
+            title="Title text"
+            rel="noopener noreferrer"
+            target="_blank"
+            >DB UI Kanal der Web Dev Community in Microsoft Teams (nur DB intern)
+          </a>
+          , oder schreibt direkt an
+          <a
+            href="mailto:db-ux-designsystem@deutschebahn.com"
+            class="elm-link"
+            title="Title text"
+            >db-ux-designsystem@deutschebahn.com
+          </a>
+          . Bitte unterstützt uns daher auf den Wegen, die Euch möglich sind,
+          wir freuen uns darüber sehr !<br>
+          Wir sind eifrig dabei, möglichst viele Beispiele zu den Verhalten
+          hinzuzufügen, um diese bestmöglich zu erklären.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
