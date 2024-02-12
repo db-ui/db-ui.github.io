@@ -3,6 +3,7 @@
   flex-direction: column;
   block-size: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .landing-header {
@@ -19,6 +20,27 @@
     justify-content: space-between;
     gap: var(--db-spacing-fixed-md);
     min-block-size: var(--db-sizing-md);
+
+    > ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      gap: var(--db-spacing-fixed-md);
+    }
+  }
+}
+
+.landing-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--db-spacing-fixed-xl);
+  margin-block: var(--db-spacing-fixed-xl);
+
+  /* 45rem are ~768 px for tablet*/
+  @media screen and (min-width: 45rem) {
+    flex-direction: row;
   }
 }
 
@@ -65,19 +87,67 @@
 
     > ul {
       display: grid;
+      width: 100%;
       grid-template-columns: repeat(1, minmax(0, 1fr));
       gap: var(--db-spacing-fixed-xl);
+      list-style-type: none;
+      padding: 0;
 
       /* 45rem are ~768 px for tablet*/
       @media screen and (min-width: 45rem) {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
+
+      > li {
+        align-items: center;
+        text-align: center;
+
+        > p {
+          margin: 0;
+        }
+
+        > ul {
+          display: contents;
+        }
+      }
+    }
+  }
+}
+
+.db-button {
+  text-decoration: none;
+}
+
+#section-vision {
+  > div {
+    padding: var(--db-spacing-fixed-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--db-border-radius-md);
+
+    > h3 {
+      text-align: center;
+    }
+  }
+}
+
+#section-storytime {
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--db-spacing-fixed-2xl);
+    padding-inline: var(--db-spacing-fixed-lg);
+
+    /* 45rem are ~768 px for tablet*/
+    @media screen and (min-width: 45rem) {
+      flex-direction: row;
     }
   }
 }
 
 .section-with-max-width {
-  padding-inline: var(--db-spacing-responsive-lg);
+  padding-inline: var(--db-spacing-responsive-md);
 }
 
 .team-photo {
@@ -86,21 +156,6 @@
   }
 }
 
-.contact {
-  & ul {
-    list-style-type: none;
-
-    & li {
-      text-align: center;
-    }
-
-    & img {
-      border-radius: 50%;
-    }
-
-    & strong {
-      display: block;
-      font-size: 1.75rem;
-    }
-  }
+.person-img {
+  border-radius: 50%;
 }

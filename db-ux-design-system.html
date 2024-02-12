@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <meta
       name="description"
       content="Overview regarding the technical components out of the DB UX Design System by Deutsche Bahn."
@@ -11,6 +12,7 @@
     <title>DB UI</title>
     <link rel="stylesheet" href="styles/db-ui-42.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/all-colors.css" />
   </head>
   <body class="landing">
     <header class="landing-header">
@@ -21,6 +23,29 @@
           src="https://db-ui.github.io/images/db_logo.svg"
           alt="DB Logo"
         />
+
+        <ul>
+          <li>
+            <a
+              class="db-link"
+              data-content="external"
+              href="https://github.com/db-ui"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              class="db-link"
+              data-content="external"
+              target="_blank"
+              href="https://marketingportal.extranet.deutschebahn.com/marketingportal"
+            >
+              Marketingportal
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main class="landing-main">
@@ -66,16 +91,6 @@
           tempor laoreet in tellus pellentesque velit. Auctor vitae tortor in
           volutpat.
         </p>
-        <p>
-          <img src="" alt="" width="" height="" /> Lorem ipsum dolor sit amet
-          consectetur. Urna fermentum egestas platea tempor laoreet in tellus
-          pellentesque velit. Auctor vitae tortor in volutpat. Lorem dolor
-          fermentum eget neque amet sapien ultrices cursus elit. Consectetur
-          nisl suspendisse aliquam nunc ut commodo mattis. Morbi faucibus
-          pretium suspendisse vel pellentesque volutpat. Blandit in mattis
-          libero quam. Sed sed porta mus nam nam ipsum nascetur augue. Eu
-          maecenas erat sociis morbi arcu dolor. Massa commodo ut vitae sit nec.
-        </p>
         <ul>
           <li class="db-card" data-spacing="small">
             <img
@@ -120,13 +135,15 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Our vision</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur. Urna fermentum egestas platea
-          tempor laoreet in tellus pellentesque velit. Auctor vitae tortor in
-          volutpat.
-        </p>
+      <section id="section-vision" class="section-with-max-width">
+        <div class="db-bg-informational-transparent-semi">
+          <h2>Our vision</h2>
+          <h3 data-variant="light">
+            Lorem ipsum dolor sit amet consectetur. Urna fermentum egestas
+            platea tempor laoreet in tellus pellentesque velit. Auctor vitae
+            tortor in volutpat.
+          </h3>
+        </div>
       </section>
       <section class="team-photo">
         <img
@@ -136,23 +153,57 @@
           height="927"
         />
       </section>
-      <section>
+      <section id="section-storytime" class="section-with-max-width">
         <h2>It’s Storytime!</h2>
-        <h3>Our history</h3>
+        <h3 data-variant="light">Our history</h3>
+        <div>
+          <img src="assets/custom/box.svg" alt="Box" />
+          <span>
+            Lorem ipsum dolor sit amet consectetur. Urna fermentum egestas
+            platea tempor laoreet in tellus pellentesque velit. Auctor vitae
+            tortor in volutpat. Lorem dolor fermentum eget neque amet sapien
+            ultrices cursus elit. Consectetur nisl suspendisse aliquam nunc ut
+            commodo mattis. Morbi faucibus pretium suspendisse vel pellentesque
+            volutpat. Blandit in mattis libero quam. Sed sed porta mus nam nam
+            ipsum nascetur augue. Eu maecenas erat sociis morbi arcu dolor.
+            Massa commodo ut vitae sit nec.
+          </span>
+        </div>
       </section>
-      <section class="contact">
+      <section class="section-with-max-width">
         <h2>Talk to us!</h2>
         <ul>
           <li>
-            <img src="assets/custom/Businessshooting_Jana-Freund-Fotografie-58_1.jpg" alt="" width="240" height="241" /><strong>Tobi</strong> Lead
-            @ DB UX Design System
-          </li>
-          <li>
-            <img src="assets/custom/Businessshooting_Jana-Freund-Fotografie-69_1.jpg" alt="" width="240" height="241" /><strong>Lea</strong> Design
+            <img
+              class="person-img"
+              src="assets/custom/Businessshooting_Jana-Freund-Fotografie-58_1.jpg"
+              alt=""
+              width="240"
+              height="241"
+            />
+            <h4>Tobi</h4>
             Lead @ DB UX Design System
           </li>
           <li>
-            <img src="assets/custom/Businessshooting_Jana-Freund-Fotografie-77_1.jpg" alt="" width="240" height="241" /><strong>Maximilian</strong>
+            <img
+              class="person-img"
+              src="assets/custom/Businessshooting_Jana-Freund-Fotografie-69_1.jpg"
+              alt=""
+              width="240"
+              height="241"
+            />
+            <h4>Lea</h4>
+            Design Lead @ DB UX Design System
+          </li>
+          <li>
+            <img
+              class="person-img"
+              src="assets/custom/Businessshooting_Jana-Freund-Fotografie-77_1.jpg"
+              alt=""
+              width="240"
+              height="241"
+            />
+            <h4>Maximilian</h4>
             Dev Lead @ DB UX Design System
           </li>
         </ul>
@@ -161,10 +212,23 @@
         >
       </section>
     </main>
-    <footer>
+    <footer class="landing-footer">
       © 2024 DB UX Design System
-      <a href="https://www.dbsystel.de/dbsystel-en/legal-3715942">Imprint</a>
-      <a href="datenschutzerklaerung.html" hreflang="de">Privacy policy</a>
+      <a
+        class="db-link"
+        href="https://www.dbsystel.de/dbsystel-en/legal-3715942"
+        data-content="internal"
+      >
+        Imprint
+      </a>
+      <a
+        class="db-link"
+        href="datenschutzerklaerung.html"
+        hreflang="de"
+        data-content="internal"
+      >
+        Privacy policy
+      </a>
     </footer>
   </body>
 </html>
