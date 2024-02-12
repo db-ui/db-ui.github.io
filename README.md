@@ -1,5 +1,10 @@
 # db-ui.github.io
+
 Hosting our central public overview page
+
+## Local development
+
+`npx browser-sync start --server --files "styles/*.css,*.html"`
 
 ## Deutsche Bahn brand
 

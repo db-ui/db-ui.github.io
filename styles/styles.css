@@ -1,0 +1,106 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  block-size: 100%;
+  overflow-y: auto;
+}
+
+.landing-header {
+  padding-inline: var(--db-spacing-fixed-md);
+  padding-block: var(--db-spacing-fixed-xs);
+
+  /* 45rem are ~768 px for tablet*/
+  @media screen and (min-width: 45rem) {
+    padding-block: var(--db-spacing-fixed-md);
+  }
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--db-spacing-fixed-md);
+    min-block-size: var(--db-sizing-md);
+  }
+}
+
+.landing-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--db-spacing-fixed-2xl);
+
+  h1 {
+    margin-inline: auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: var(--db-border-radius-md);
+      border-inline-start: none;
+      border-block-end: var(--db-border-height-lg) solid
+        var(--db-brand-origin-enabled);
+      inset-block-end: calc(-1 * var(--db-spacing-fixed-xs));
+      inline-size: var(--db-sizing-2xl);
+      block-size: auto;
+      inset-inline-start: 50%;
+      inset-block-start: auto;
+      transform: translate(-50%, 0);
+    }
+
+    &::after {
+      content: " ❤️";
+    }
+  }
+
+  > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: var(--db-spacing-fixed-xl);
+
+    > p {
+      /* 45rem are ~768 px for tablet*/
+      max-inline-size: 45rem;
+    }
+
+    > ul {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: var(--db-spacing-fixed-xl);
+
+      /* 45rem are ~768 px for tablet*/
+      @media screen and (min-width: 45rem) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+  }
+}
+
+.section-with-max-width {
+  padding-inline: var(--db-spacing-responsive-lg);
+}
+
+.team-photo {
+  & img {
+    width: 100vw;
+  }
+}
+
+.contact {
+  & ul {
+    list-style-type: none;
+
+    & li {
+      text-align: center;
+    }
+
+    & img {
+      border-radius: 50%;
+    }
+
+    & strong {
+      display: block;
+      font-size: 1.75rem;
+    }
+  }
+}
