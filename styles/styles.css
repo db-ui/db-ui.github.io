@@ -80,7 +80,7 @@
     justify-items: center;
     gap: var(--db-spacing-fixed-xl);
 
-    > p {
+    p {
       /* 45rem are ~768 px for tablet*/
       max-inline-size: 45rem;
     }
@@ -143,6 +143,10 @@
     @media screen and (min-width: 45rem) {
       flex-direction: row;
     }
+  }
+
+  p {
+    max-inline-size: 40rem;
   }
 }
 
