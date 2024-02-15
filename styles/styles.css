@@ -1,3 +1,12 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
 .landing {
   display: flex;
   flex-direction: column;
@@ -36,7 +45,11 @@
   align-items: center;
   justify-content: center;
   gap: var(--db-spacing-fixed-xl);
-  margin-block: var(--db-spacing-fixed-xl);
+  margin-block-start: var(--db-spacing-fixed-2xl, 48px);
+
+  background: var(--db-adaptive-background-level-2--enabled, #f8f8f9);
+
+  padding-block: var(--db-spacing-fixed-2xl, 48px);
 
   /* 45rem are ~768 px for tablet*/
   @media screen and (min-width: 45rem) {
@@ -61,7 +74,7 @@
       border-block-end: var(--db-border-height-lg) solid
         var(--db-brand-origin-enabled);
       inset-block-end: calc(-1 * var(--db-spacing-fixed-xs));
-      inline-size: var(--db-sizing-2xl);
+      inline-size: 72px;
       block-size: auto;
       inset-inline-start: 50%;
       inset-block-start: auto;
@@ -118,16 +131,29 @@
   text-decoration: none;
 }
 
+#section-main-features {
+  > ul {
+    /* 64rem are ~1024 px for desktop-small*/
+    max-inline-size: 64rem;
+  }
+}
+
 #section-vision {
   > div {
     padding: var(--db-spacing-fixed-md);
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: var(--db-border-radius-md);
+    border-radius: var(--db-border-radius-lg);
+    inline-size: 100%;
+    /* 64rem are ~1024 px for desktop-small*/
+    max-inline-size: 64rem;
 
     > h3 {
       text-align: center;
+      /* 45rem are ~768 px for tablet*/
+      max-inline-size: 45rem;
+      text-wrap: balance;
     }
   }
 }
@@ -138,16 +164,19 @@
     flex-direction: column;
     gap: var(--db-spacing-fixed-2xl);
     padding-inline: var(--db-spacing-fixed-lg);
-
-    /* 45rem are ~768 px for tablet*/
-    @media screen and (min-width: 45rem) {
-      flex-direction: row;
-    }
+    margin-inline: auto;
   }
 
   p {
-    max-inline-size: 40rem;
+    /* 45rem are ~768 px for tablet*/
+    max-inline-size: 45rem;
   }
+}
+
+#section-talk-to-us {
+  /* 64rem are ~1024 px for desktop-small*/
+  max-inline-size: 64rem;
+  margin-inline: auto;
 }
 
 .section-with-max-width {
