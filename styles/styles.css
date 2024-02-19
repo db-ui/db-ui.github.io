@@ -71,18 +71,13 @@ h6 {
       position: absolute;
       border-radius: var(--db-border-radius-md);
       border-inline-start: none;
-      border-block-end: var(--db-border-height-lg) solid
-        var(--db-brand-origin-enabled);
-      inset-block-end: calc(-1 * var(--db-spacing-fixed-xs));
+      border-block-end: 8px solid var(--db-brand-origin-enabled);
+      inset-block-end: calc(-1 * var(--db-spacing-fixed-xl));
       inline-size: 72px;
       block-size: auto;
       inset-inline-start: 50%;
       inset-block-start: auto;
       transform: translate(-50%, 0);
-    }
-
-    &::after {
-      content: " ❤️";
     }
   }
 
@@ -91,7 +86,6 @@ h6 {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    gap: var(--db-spacing-fixed-xl);
 
     p {
       /* 45rem are ~768 px for tablet*/
