@@ -129,6 +129,7 @@ h6 {
     max-inline-size: 64rem;
     inline-size: 100%;
     margin-block: var(--db-spacing-fixed-xl);
+    border-radius: var(--db-border-radius-lg);
   }
 }
 
