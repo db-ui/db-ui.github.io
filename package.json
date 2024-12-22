@@ -1,0 +1,17 @@
+{
+  "name": "db-ui.github.io",
+  "version": "0.0.0",
+  "description": "Hosting our central public overview page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cpr node_modules/@db-ui/base/build/assets/fonts/ assets/fonts"
+  },
+  "author": "",
+  "license": "Apache 2.0",
+  "private": true,
+  "devDependencies": {
+    "@db-ui/base": "0.29.0",
+    "cpr": "^3.0.1"
+  }
+}
