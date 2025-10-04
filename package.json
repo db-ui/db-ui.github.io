@@ -13,5 +13,8 @@
   "devDependencies": {
     "@db-ui/base": "0.29.0",
     "cpr": "^3.0.1"
+  },
+  "engines": {
+    "node": ">= 24"
   }
 }
